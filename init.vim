@@ -7,6 +7,7 @@
 "╚═╝╚═╝░░╚══╝╚═╝░░░╚═╝░░░╚═╝░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝
 
 
+
 "---------------------------------vim config----------------------------
 
 "plegado
@@ -18,7 +19,6 @@ set foldlevel=2
 " autoindexar
 set sw=2
 set relativenumber
-
 " pegar
 set clipboard=unnamed
 
@@ -46,6 +46,7 @@ set title
 set background=dark
 set laststatus=2
 set backspace=2
+set guioptions-=T
 set guioptions-=L
 set encoding=utf-8
 let mapleader= " "
