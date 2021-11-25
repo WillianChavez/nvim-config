@@ -126,8 +126,9 @@ nmap <leader>so :so%<CR>
 "comandos de busqueda
 nmap <leader>gs  :CocSearch
 nmap <leader>fs :FZF<CR>
-nmap <leader>rg :Rg<CR>
-
+"nmap <leader>rg :Rg<CR>
+"Limpiar busqueda
+nmap <silent>cs :nohlsearch<CR>
 "cog
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -227,7 +228,7 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js'
 let g:prettier#config#print_width = 160
 let g:prettier#config#semi="false"
 let g:prettier#config#single_quote = 'true'
-let g:prettier#config#tab_width = 2
+let g:prettier#config#tab_width = 4
 let g:prettier#config#use_tabs = 'false'
 " when running at every change you may want to disable quickfix
 let g:prettier#quickfix_enabled = 0
