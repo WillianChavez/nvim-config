@@ -51,7 +51,6 @@ set guioptions-=L
 set encoding=utf-8
 let mapleader= " "
 imap ii <Esc>
-
 "------------------------------Plugins-------------------------------
 "Plugins
 call plug#begin('~/.vim/plugged')
@@ -59,7 +58,9 @@ call plug#begin('~/.vim/plugged')
 " Themes
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
-"IDE
+"Copilot
+Plug 'https://github.com/github/copilot.vim.git'
+"IDgithub/copilotE
 Plug 'easymotion/vim-easymotion'
  "Nerdtree
 Plug 'preservim/nerdtree'
