@@ -19,6 +19,7 @@ set foldlevel=2
 " autoindexar
 set sw=2
 set relativenumber
+
 " pegar
 set clipboard=unnamed
 
@@ -112,12 +113,11 @@ let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 
 
-
 colorscheme onehalfdark
 
 "save file
 "guardar archivo
-nmap <leader>w :w <CR>
+nmap <leader>w :w<CR>
 "cerrar ventana
 "close current  window
 nmap <leader>q :q <CR>
@@ -166,7 +166,7 @@ nmap <silent gr <Plug>(coc-references)
 "emmet
 let g:user_emmet_leader_key=','
 let g:user_emmet_settings = {
-\  'variables': {'lang': 'ja'},
+\  'variables': {'lang': 'es'},
 \  'html': {
 \    'default_attributes': {
 \      'option': {'value': v:null},
@@ -177,14 +177,16 @@ let g:user_emmet_settings = {
 \              ."<html lang=\"${lang}\">\n"
 \              ."<head>\n"
 \              ."\t<meta charset=\"${charset}\">\n"
-\              ."\t<title></title>\n"
 \              ."\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
+\              ."\t<title></title>\n"
 \              ."</head>\n"
 \              ."<body>\n\t${child}|\n</body>\n"
 \              ."</html>",
 \    },
 \  },
 \}
+
+
 "abrir Nerdtree
 "open nerdtree
 nmap <Leader>nt :NERDTreeFind<CR>
@@ -192,6 +194,8 @@ let NERDTreeQuitOnOpen=1
 let NERDTreeAutoDeleteBuffer=1
 let NERDTreeMinimalUI=1
 let NERDTeeDirArrows=1
+
+let NERDTreeShowHidden=1
 
 let NERDTeeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
@@ -224,8 +228,9 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js'
 
 
 " prettier
-
-let g:prettier#config#print_width = 160
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
+let g:prettier#config#print_width = 120
 let g:prettier#config#semi="false"
 let g:prettier#config#single_quote = 'true'
 let g:prettier#config#tab_width = 4
